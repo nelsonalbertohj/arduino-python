@@ -80,6 +80,11 @@ window plots the last 10 seconds. Close the window or press **Ctrl+C** to stop.
 If the board isn't found, add the port name from step 2, e.g.
 `py potentiometer_led.py COM3`.
 
+**In VS Code:** open the project with **File → Open Folder**, open
+`potentiometer_led.py`, and click the **Run Python File** button (the triangle,
+top right). Don't use Shift+Enter or "Run in Interactive Window": they run the
+code line by line, which this script does not support.
+
 ## How it works
 
 - **StandardFirmata** lets Python use the board's pins over USB. The script does the rest.

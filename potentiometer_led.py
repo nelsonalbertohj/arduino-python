@@ -37,6 +37,12 @@ PLOT_SECONDS = 10    # How many seconds of readings the plot shows at once.
 # If you started the script with your computer's normal Python, we simply
 # start it again using the Python inside .venv. That is why you never have to
 # "activate" anything: running the file is enough.
+if "__file__" not in globals():
+    # This happens when the code is run line by line (VS Code: Shift+Enter, or
+    # "Run in Interactive Window") instead of as a whole file.
+    sys.exit("Run this script as a whole file: in VS Code, click the Run Python File "
+             "button (the triangle at the top right), or type "
+             "'python3 potentiometer_led.py' in a terminal.")
 folder = Path(__file__).resolve().parent
 venv_folder = folder / ".venv"
 if os.name == "nt":                                   # Windows
