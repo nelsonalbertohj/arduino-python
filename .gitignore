@@ -1,0 +1,5 @@
+# Each student creates their own environment; never share it.
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
