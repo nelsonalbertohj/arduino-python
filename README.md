@@ -103,6 +103,7 @@ If the board isn't found, add the port name from step 2, e.g.
 | `Could not find a serial port` | Plug the board in. Try another cable or the CH340 driver |
 | `Resource busy` or `Access is denied` | Close the Arduino IDE |
 | `not running StandardFirmata` | Upload StandardFirmata (step 2) and wait for "Done uploading". If the upload fails, see the next row |
+| `Servo.h: No such file or directory` when uploading StandardFirmata | Arduino IDE: **Tools → Manage Libraries**, search **Servo**, click Install, then upload again |
 | Upload error `not in sync` | Check board and port. Nano: try **Old Bootloader**. Unplug anything on pins 0 and 1 |
 | `running scripts is disabled` | Activate in Command Prompt instead, or just run the file |
 
